@@ -1,0 +1,54 @@
+
+<!-- The download.html file contains a form with a submit button. When the button is clicked, it sends a request to the server to download the zip file with the augmented images. -->
+
+
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            .download-form {
+                max-width: 500px;
+                margin: auto;
+                text-align: center;
+            }
+
+            .download-form input[type="submit"] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            .download-form input[type="submit"]:hover {
+                background-color: #5a344c;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Download augmented images</h1>
+        <form class="download-form" action="/download" method="get">
+            <input type="submit" value="Download">
+        </form>
+
+        <form action="/redirect" method="POST">
+            <button type="submit">Want to Augment more images?</button>
+        </form>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
